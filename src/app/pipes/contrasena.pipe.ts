@@ -1,0 +1,16 @@
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'contrasena'
+})
+export class ContrasenaPipe implements PipeTransform {
+
+  transform(value: string, activar = true): string {
+    if (activar) {
+      return value.replace(value, '*'.repeat(value.length));
+    } else {
+      return value;
+    }
+  }
+
+}

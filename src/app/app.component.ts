@@ -26,4 +26,5 @@ export class AppComponent {
   });
   fecha = new Date();
   video = 'WJ3-F02-F_Y';
+  activar = true;
 }
