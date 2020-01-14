@@ -25,4 +25,5 @@ export class AppComponent {
     setTimeout(() => resolve('Llegó la data!'), 3500);
   });
   fecha = new Date();
+  video = 'WJ3-F02-F_Y';
 }
